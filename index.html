@@ -5,12 +5,12 @@
     <title></title>
   </head>
   <body>
-    <header class="flex justify-around w-screen">
+    <header class="flex justify-around w-screen" id="#top">
       <div class="flex w-2/5" style="justify-content: space-between; align-items: center">
         <a class="link" href="https://cmsc-100-2s24-25.github.io/exer-02-html-with-css-lvdejesus" style="color: #2e3440; text-decoration:none; font-size: 40px; font-weight: bold;">
           L
         </a>
-        <nav class="">
+        <nav>
           <a class="link" href="https://github.com/lvdejesus">
             Github
           </a>
@@ -19,19 +19,35 @@
     </header>
     <main class="flex justify-around w-screen">
       <div class="flex flex-col items-center bg-bg w-3/5">
+          <h1>Basic Information</h1>
         <div>
-          <h1>Featured Photo</h1>
+          <div class="flex" style="gap: 12px; align-items: center">
+            <img src="images/me.jpg" class="image" />
+            <div class="flex" style="gap: 12px">
+              <div style="text-align: right; color: #4c566a">
+                <div>Name</div>
+                <div>Birthday</div>
+                <div>Degree Program</div>
+              </div>
+              <div>
+                <div>Lance Chrysler V. De Jesus</div>
+                <div>2005/05/14</div>
+                <div>BS Computer Science</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h1 class="text-center">Previous Web Projects</h1>
-          <div class="flex" style="gap: 20px">
+        <div style="padding: 20px">
+          <h1 class="text-center">Previous Projects</h1>
+          <div class="flex justify-around" style="gap: 20px">
             <div class="card">
               <div class="text-center">
                 Gravity Simulator
               </div>
               <hr />
               <div class="card-body">
-                Simulates gravity and orbits of massive objects
+                <div>Simulates gravity and orbits of massive objects</div>
+                <img src="images/gravity.png" class="image" />
               </div>
             </div>
             <div class="card">
@@ -40,7 +56,8 @@
               </div>
               <hr />
               <div class="card-body">
-                Multiplication game with leaderboards
+                <div>Multiplication game with leaderboards</div>
+                <img src="images/multi.jpg" class="image" />
               </div>
             </div>
             <div class="card">
@@ -49,8 +66,8 @@
               </div>
               <hr />
               <div class="card-body">
-                From an image, show where to place blocks in Minecraft so that
-                the in-game map shows the image. (no image)
+                <div>From an image, show where to place blocks in Minecraft so that
+                the in-game map shows the image. (no image)</div>
               </div>
             </div>
           </div>
@@ -128,7 +145,8 @@
     <footer>
       <p class="text-gray text-center">
         by Lance Chrysler De Jesus <br />
-        for CMSC 100
+        for CMSC 100 <br />
+        <a href="#top">Back to top</a>
       </p>
     </footer>
   </body>
