@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-gray {
+  color: #777
+}
+
+.text-center {
+  text-align: center;
+}
